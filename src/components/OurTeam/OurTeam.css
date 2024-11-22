@@ -1,0 +1,36 @@
+.main-img {
+    margin-top: 10%;
+    background-image: url('https://aryalexfoundation.in/wp-content/uploads/2024/09/Mr.-Ranjan-Das.jpg');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.main-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+
+@media (max-width: 768px) {
+    .main-img {
+        height: 40vh; /* Adjust height for smaller screens */
+        margin-top: 5%; /* Reduce the margin on smaller screens */
+    }
+}
+
+.main-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Fallback color */
+    border-radius: 50px;
+    z-index: -1;
+}
