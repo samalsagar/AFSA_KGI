@@ -1,57 +1,71 @@
 import React, { useState, useEffect } from 'react';
 import './HeroSection.css'
+import main1 from '../../assets/MainImage/main_img1.jpg';
+import main2 from '../../assets/MainImage/main_img2.jpg';
+import main3 from '../../assets/MainImage/main_img3.jpeg';
+import main4 from '../../assets/MainImage/main_img4.jpg';
+import main5 from '../../assets/MainImage/main_img5.jpg';
 function HeroSection() {
   // State to track the current slide index
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
     {
       id: 1,
-      image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+      image: main1,
       alt: 'Wild Landscape',
     },
     {
       id: 2,
-      image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+      // image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+      image: main2,
       alt: 'Camera',
     },
     {
       id: 3,
-      image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+      // image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+      image: main3,
       alt: 'Exotic Fruits',
     },
     {
         id: 4,
-        image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        // image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        image: main4,
         alt: 'Exotic Fruits',
       },
       {
         id: 5,
-        image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        // image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        image: main5,
         alt: 'Exotic Fruits',
       },
       {
         id: 6,
-        image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        // image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        image: main1,
         alt: 'Exotic Fruits',
       },
       {
         id: 7,
-         image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        //  image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        image: main2,
         alt: 'Exotic Fruits',
       },
       {
         id: 8,
-         image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        //  image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        image: main3,
         alt: 'Exotic Fruits',
       },
       {
         id: 9,
-         image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        //  image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        image: main4,
         alt: 'Exotic Fruits',
       },
       {
         id: 10,
-         image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        //  image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
+        image: main5,
         alt: 'Exotic Fruits',
       },
   ];

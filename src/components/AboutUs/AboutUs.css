@@ -1,4 +1,39 @@
-.aboutUs-image{
-    height: 70vh;
-    width: auto;
+/* Styling for the background images with shadow effect */
+.test {
+    background-image: url('https://images.pexels.com/photos/6646816/pexels-photo-6646816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-position: center;
+    background-size: cover;
+    height: 50vh; /* Default height for mobile */
+    background-repeat: no-repeat;
+    filter: brightness(60%); /* Dim the image to make text readable */
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5); /* Shadow effect inside */
+    border-radius: 10px; /* Add rounded corners */
+    transition: all 0.3s ease-in-out;
+}
+
+/* For tablet screens (min-width: 768px) */
+@media (min-width: 768px) {
+    .test {
+        height: 70vh;
+    }
+}
+
+/* For larger screens, like laptops (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .test {
+        height: 60vh;
+    }
+}
+
+/* For even larger screens, like desktops (min-width: 1280px) */
+@media (min-width: 1280px) {
+    .test {
+        height: 60vh;
+    }
+}
+
+/* Hover effect on images */
+.test:hover {
+    filter: brightness(80%); /* Lighten the image when hovered */
+    transform: scale(1.05); /* Slight zoom effect */
 }

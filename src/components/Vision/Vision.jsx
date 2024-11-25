@@ -5,11 +5,11 @@ function Vision() {
     <>
       <div>
         <section className="bg-custom-blue py-16">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="p-6">
             <h2 className="text-3xl font-extrabold text-white text-center animate__animated animate__fadeIn">Our Vision</h2>
-            <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {/* Mission */}
-              <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:bg-indigo-50 hover:text-gray-800 ease-in-out">
+              <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-xl shadow-black hover:shadow-2xl hover:shadow-black transition-all duration-300 transform hover:scale-105 hover:rotate-3d hover:bg-indigo-50 hover:text-gray-800 ease-in-out">
                 <div className="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-500 text-white transition-all duration-300 transform hover:rotate-45">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                     stroke="currentColor" className="w-8 h-8">
@@ -24,7 +24,7 @@ function Vision() {
               </div>
 
               {/* Values */}
-              <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:bg-indigo-50 hover:text-gray-800 ease-in-out">
+              <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-xl shadow-black hover:shadow-2xl hover:shadow-black transition-all duration-300 transform hover:scale-105 hover:rotate-3d hover:bg-indigo-50 hover:text-gray-800 ease-in-out">
                 <div className="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-500 text-white transition-all duration-300 transform hover:rotate-45">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                     stroke="currentColor" className="w-8 h-8">
@@ -39,7 +39,7 @@ function Vision() {
               </div>
 
               {/* Vision */}
-              <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:bg-indigo-50 hover:text-gray-800 ease-in-out">
+              <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-xl shadow-black hover:shadow-2xl hover:shadow-black transition-all duration-300 transform hover:scale-105 hover:rotate-3d hover:bg-indigo-50 hover:text-gray-800 ease-in-out">
                 <div className="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-500 text-white transition-all duration-300 transform hover:rotate-45">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                     stroke="currentColor" className="w-8 h-8">
@@ -53,6 +53,22 @@ function Vision() {
                   <p className="mt-2 text-base text-gray-500">An equitable society where people can realize and exercise their potential, and live in peace with dignity.</p>
                 </div>
               </div>
+
+              {/* Approach - New Card with Image */}
+              <div className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-xl shadow-black hover:shadow-2xl hover:shadow-black transition-all duration-300 transform hover:scale-105 hover:rotate-3d hover:bg-indigo-50 hover:text-gray-800 ease-in-out">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-500 text-white transition-all duration-300 transform hover:rotate-45">
+                  <img 
+                    src="https://via.placeholder.com/50" // Replace with your image URL
+                    alt="Approach Icon" 
+                    className="w-8 h-8 object-cover rounded-full"
+                  />
+                </div>
+                <div className="mt-5">
+                  <h3 className="text-lg font-medium text-gray-900">Approach</h3>
+                  <p className="mt-2 text-base text-gray-500">Our approach involves collaboration with communities to develop sustainable solutions that prioritize local resources and long-term impact.</p>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>

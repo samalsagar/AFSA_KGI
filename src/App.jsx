@@ -6,6 +6,9 @@ import FactsAndFigures from './components/FactsAndFigures/FactsAndFigures'
 import AboutUs from './components/AboutUs/AboutUs'
 import Vision from './components/Vision/Vision'
 import OurTeam from './components/OurTeam/OurTeam'
+import Footer from './components/Footer/Footer'
+import Gallery from './components/Gallery/Gallery'
+import WhatsappIcon from './components/WhatsappIcon/WhatsappIcon'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,7 +20,9 @@ function App() {
       <AboutUs />
       <Vision />
       <OurTeam />
-   
+      <Gallery />
+      <Footer />
+      {/* <WhatsappIcon /> */}
     </>
   )
 }

@@ -1,0 +1,49 @@
+/* Gallery.css */
+
+.gallery-card {
+    perspective: 1000px; /* Add perspective for 3D effect */
+    transition: transform 0.3s ease-out;
+}
+
+.gallery-img {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    will-change: transform, box-shadow;
+}
+
+.gallery-card:hover .gallery-img {
+    transform: scale(1.05) rotateY(10deg); /* Slight scale and rotation on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to simulate depth */
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    .gallery-card:hover .gallery-img {
+        transform: scale(1.05) rotateY(0deg); /* Remove rotation for smaller screens */
+    }
+}
+
+.grid {
+    display: grid;
+    gap: 1.25rem; /* 5px */
+}
+
+@media (min-width: 768px) {
+    .grid-cols-2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* .bg-custom-blue {
+    background-color: #003366; 
+} */
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+}
