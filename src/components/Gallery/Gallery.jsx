@@ -2,7 +2,7 @@ import React from 'react'
 import './Gallery.css'
 import start1 from '../../assets/Gallery/Start.jpg'
 import start2 from '../../assets/Gallery/start2.jpg'
-import jal from '../../assets/Gallery/jalachhatra.jpg'
+// import jal from '../../assets/Gallery/jalachhatra.jpg'
 import blanket from '../../assets/Gallery/BlanketDistribution.jpg'
 import learn from '../../assets/Gallery/Learning.jpg'
 import dry1 from '../../assets/Gallery/dryFood.jpg'
@@ -38,7 +38,7 @@ function Gallery() {
                 </div>
                 <div className="gallery-card">
                    <div>
-                   <img className="h-auto max-w-full rounded-lg gallery-img" src={jal} alt="Gallery image" />
+                   <img className="h-auto max-w-full rounded-lg gallery-img" src={start2} alt="Gallery image" />
                    <div>
                         <h2 className='text-white text-2xl font-bold'>Jalachhatra</h2>
                     </div>
