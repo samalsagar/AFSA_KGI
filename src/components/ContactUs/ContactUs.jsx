@@ -1,6 +1,34 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import axios from 'axios'; 
+import Swal from 'sweetalert2';
 function ContactUs() {
+    const [name, setname] = useState('')
+    const [email, setemail] = useState('')
+    const [address, setaddress] = useState('')
+    const [message, setmessage] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("jksdhfk")
+        console.log(name, email, address, message);
+        const data = {
+            Name: name,
+            Email: email,
+            Address: address,
+            Message: message
+        }
+
+        axios.post('https://api.sheetbest.com/sheets/0b68276b-297b-4d08-9433-d093fdf04727', data).then((response) => {
+            console.log(response);
+            Swal.fire('We Appreciate Your Inquiry', "Will get back to you soon", 'success');
+            setname('')
+            setemail('')
+            setaddress('')
+            setmessage('')
+
+        })
+
+    }
     return (
         <div>
             <section className="bg-custom-blue" id="contact">
@@ -23,7 +51,7 @@ function ContactUs() {
                         <div className="grid md:grid-cols-2">
                             <div className="h-full pr-6">
                                 <p className="text-justify mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                                We're here to help! Whether you have a question, need assistance, or just want to share your thoughts, feel free to reach out to us. Our team is always ready to assist you.
+                                    We're here to help! Whether you have a question, need assistance, or just want to share your thoughts, feel free to reach out to us. Our team is always ready to assist you.
                                 </p>
                                 <ul className="mb-6 md:mb-0">
                                     <li className="flex">
@@ -83,25 +111,51 @@ function ContactUs() {
                             </div>
                             <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
                                 <h2 className="mb-4 text-2xl font-bold dark:text-white">Ready to Get Started?</h2>
-                                <form id="contactForm">
+                                <form id="contactForm" onSubmit={handleSubmit}>
                                     <div className="mb-6">
                                         <div className="mx-0 mb-1 sm:mb-4">
                                             <div className="mx-0 mb-1 sm:mb-4">
-                                                <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autoComplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name" />
+                                                <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label>
+                                                <input
+                                                    type="text"
+                                                    id="name"
+                                                    required
+                                                    placeholder="Your name"
+                                                    onChange={(e) => setname(e.target.value)}
+                                                    value={name}
+                                                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-800 sm:mb-0" name="name" />
                                             </div>
                                             <div className="mx-0 mb-1 sm:mb-4">
-                                                <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autoComplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email" />
+                                                <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider"></label>
+                                                <input type="email"
+                                                    id="email"
+                                                    placeholder="Your email address"
+                                                    required
+                                                    onChange={(e) => setemail(e.target.value)}
+                                                    value={email}
+                                                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-800 sm:mb-0" name="email" />
                                             </div>
                                             <div className="mx-0 mb-1 sm:mb-4">
-                                                <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autoComplete="given-name" placeholder="Your address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name" />
+                                                <label htmlFor="address" className="pb-1 text-xs uppercase tracking-wider"></label>
+                                                <input type="text"
+                                                    id="address"
+                                                    placeholder="Your address"
+                                                    onChange={(e) => setaddress(e.target.value)}
+                                                    value={address}
+                                                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-800 sm:mb-0" name="name" />
                                             </div>
                                         </div>
                                         <div className="mx-0 mb-1 sm:mb-4">
-                                            <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
+                                            <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider"></label>
+                                            <textarea id="textarea"
+                                                onChange={(e) => setmessage(e.target.value)}
+                                                value={message}
+                                                name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-800 sm:mb-0"></textarea>
                                         </div>
                                     </div>
                                     <div className="text-center">
-                                        <button type="submit" className="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                                        <button
+                                            type="submit" className="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
                                     </div>
                                 </form>
                             </div>

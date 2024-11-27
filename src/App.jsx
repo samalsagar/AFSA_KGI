@@ -39,9 +39,7 @@ function App() {
         donateRef={donateRef}
       />
       <main>
-        {/* <section id="herosection" ref={heroRef}> */}
-          <HeroSection />
-        {/* </section> */}
+        <HeroSection/>
         <section id="facts" ref={factsRef}>
           <FactsAndFigures />
         </section>
@@ -60,18 +58,25 @@ function App() {
         <section id="gallery" ref={galleryRef}>
           <Gallery />
         </section>
-
         <section id="contactus" ref={contactusRef}>
           <ContactUs />
         </section>
-
-        <section id='donate' ref={donateRef}>
+        <section id="donate" ref={donateRef}>
           <Donate />
         </section>
       </main>
       <WhatsappIcon />
-      <Footer />
-      
+      <Footer 
+        heroRef={heroRef}
+        factsRef={factsRef}
+        aboutUsRef={aboutUsRef}
+        visionRef={visionRef}
+        ourTeamRef={ourTeamRef}
+        ourWorkRef={ourWorkRef}
+        galleryRef={galleryRef}
+        contactusRef={contactusRef}
+        donateRef={donateRef}
+      />
     </>
   );
 }
