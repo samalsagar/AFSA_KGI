@@ -473,57 +473,33 @@ function OurWork() {
                 </div>
 
             </div>
-
-            {/* <div className="bg-custom-blue py-12">
-            <h2 className="text-purple-500 text-sm font-semibold pb-10 sm:text-base md:text-xl lg:text-2xl">
-                    OUR PARTNERS
-                </h2>
-                <div className="container mx-auto px-4">
-                    <div className="flex justify-center items-center gap-12">
-                        <div className="flex gap-12">
-                            <div className="flex flex-col items-center">
-                                <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Client 1 Logo" className="h-36 w-36 rounded-full mb-2" />
-                                <p className="text-sm font-medium">Client 1</p>
-                            </div>
-                            <div className="flex flex-col items-center">
-                            <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Client 1 Logo" className="h-36 w-36 rounded-full mb-2" />
-                                <p className="text-sm font-medium">Client 2</p>
-                            </div>
-                            <div className="flex flex-col items-center">
-                            <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Client 1 Logo" className="h-36 w-36 rounded-full mb-2" />
-                                <p className="text-sm font-medium">Client 3</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
             {/* OUR PARTNERS */}
             <div className="bg-custom-blue py-12">
-  <h2 className="text-white text-3xl font-extrabold text-center pb-10">Our Partners</h2>
-  <div className="container mx-auto px-4">
-    <div className="flex justify-center items-center gap-12 flex-col sm:flex-row">
-      
- 
-      <div className="bg-gray-400 p-6 rounded-lg shadow-lg flex flex-col items-center w-48 mb-6 sm:mb-0 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:rotate-3deg animate-fade-in">
-        <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Client 1 Logo" className="h-16 w-16 mb-2 rounded-full" />
-        <p className="text-sm font-bold text-center text-custom-blue">Kalinga Group of Institutions (KGI)</p>
-      </div>
+                <h2 className="text-white text-3xl font-extrabold text-center pb-10">Our Partners</h2>
+                <div className="container mx-auto px-4">
+                    <div className="flex justify-center items-center gap-12 flex-col sm:flex-row">
 
-      
-      <div className="bg-gray-400 p-6 rounded-lg shadow-lg flex flex-col items-center w-48 mb-6 sm:mb-0 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:rotate-3deg animate-fade-in">
-        <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Client 2 Logo" className="h-16 w-16 mb-2 rounded-full" />
-        <p className="text-sm font-bold text-center text-custom-blue">Siksha Trust in partnership with MSME Dept Govt of India.</p>
-      </div>
 
-   
-      <div className="bg-gray-400 p-6 rounded-lg shadow-lg flex flex-col items-center w-48 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:rotate-3deg animate-fade-in">
-        <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Client 3 Logo" className="h-16 w-16 mb-2 rounded-full" />
-        <p className="text-sm font-bold text-center text-custom-blue">Dibyang Adarsha <br />Trust</p>
-      </div>
+                        <div className="bg-gray-400 p-6 rounded-lg shadow-lg flex flex-col items-center w-48 mb-6 sm:mb-0 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:rotate-3deg animate-fade-in">
+                            <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Client 1 Logo" className="h-16 w-16 mb-2 rounded-full" />
+                            <p className="text-sm font-bold text-center text-custom-blue">Kalinga Group of Institutions (KGI)</p>
+                        </div>
 
-    </div>
-  </div>
-</div>
+
+                        <div className="bg-gray-400 p-6 rounded-lg shadow-lg flex flex-col items-center w-48 mb-6 sm:mb-0 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:rotate-3deg animate-fade-in">
+                            <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Client 2 Logo" className="h-16 w-16 mb-2 rounded-full" />
+                            <p className="text-sm font-bold text-center text-custom-blue">Siksha Trust in partnership with MSME Dept Govt of India.</p>
+                        </div>
+
+
+                        <div className="bg-gray-400 p-6 rounded-lg shadow-lg flex flex-col items-center w-48 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:rotate-3deg animate-fade-in">
+                            <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Client 3 Logo" className="h-16 w-16 mb-2 rounded-full" />
+                            <p className="text-sm font-bold text-center text-custom-blue">Dibyang Adarsha <br />Trust</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
 
 

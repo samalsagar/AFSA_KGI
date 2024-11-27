@@ -9,7 +9,8 @@ function Header({
   ourTeamRef,
   ourWorkRef,
   galleryRef,
-  contactusRef
+  contactusRef,
+  donateRef
 }) {
   // State to toggle menu on and off
   const [menuOpen, setMenuOpen] = useState(false);
@@ -136,7 +137,9 @@ function Header({
           </div>
 
           <div className="flex max-lg:ml-auto space-x-3">
-            <button className="px-8 py-3 text-sm rounded-full font-bold text-white border-2 border-custom-blue bg-custom-blue transition-all ease-in-out duration-300 hover:bg-transparent hover:text-custom-blue">
+            <button 
+             onClick={() => scrollToSection(donateRef)}
+            className="px-8 py-3 text-sm rounded-full font-bold text-white border-2 border-custom-blue bg-custom-blue transition-all ease-in-out duration-300 hover:bg-transparent hover:text-custom-blue">
               Donate
             </button>
           </div>
