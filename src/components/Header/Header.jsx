@@ -9,6 +9,7 @@ function Header({
   ourTeamRef,
   ourWorkRef,
   galleryRef,
+  contactusRef
 }) {
   // State to toggle menu on and off
   const [menuOpen, setMenuOpen] = useState(false);
@@ -120,6 +121,15 @@ function Header({
                   className="text-gray-500 block font-semibold text-[15px]"
                 >
                   Gallery
+                </button>
+              </li>
+
+              <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
+                <button
+                  onClick={() => scrollToSection(contactusRef)}
+                  className="text-gray-500 block font-semibold text-[15px]"
+                >
+                  Contact Us
                 </button>
               </li>
             </ul>

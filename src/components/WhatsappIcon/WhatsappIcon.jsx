@@ -1,14 +1,13 @@
 import React from 'react'
-
+import './Whatsapp.css'
 function WhatsappIcon() {
   return (
     <div>
-      <Link
-          to="https://wa.me/919348228808?text=Hello How can I help you ?" target='_blank'
-          className="fixed bottom-4 right-4 bg-black text-white p-4 rounded-full shadow-lg hover:bg-purple-800 transition-colors duration-300"
-        >
-          <span className="text-xl">📞</span>
-        </Link>
+
+      <a href="https://wa.me/919348228808?text=How can I help you ?" target='_blank' id="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/640px-WhatsApp_icon.png" alt="WhatsApp" />
+      </a>
+
     </div>
   )
 }

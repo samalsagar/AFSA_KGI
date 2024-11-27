@@ -9,6 +9,8 @@ import OurTeam from './components/OurTeam/OurTeam';
 import Footer from './components/Footer/Footer';
 import Gallery from './components/Gallery/Gallery';
 import OurWork from './components/OurWork/OurWork';
+import ContactUs from './components/ContactUs/ContactUs';
+import WhatsappIcon from './components/WhatsappIcon/WhatsappIcon';
 
 function App() {
   // Create refs for each section
@@ -19,6 +21,7 @@ function App() {
   const ourTeamRef = useRef(null);
   const ourWorkRef = useRef(null);
   const galleryRef = useRef(null);
+  const contactusRef = useRef(null);
 
   return (
     <>
@@ -30,6 +33,7 @@ function App() {
         ourTeamRef={ourTeamRef}
         ourWorkRef={ourWorkRef}
         galleryRef={galleryRef}
+        contactusRef={contactusRef}
       />
       <main>
         {/* <section id="herosection" ref={heroRef}> */}
@@ -53,8 +57,14 @@ function App() {
         <section id="gallery" ref={galleryRef}>
           <Gallery />
         </section>
+
+        <section id="contactus" ref={contactusRef}>
+          <ContactUs />
+        </section>
       </main>
+      <WhatsappIcon />
       <Footer />
+      
     </>
   );
 }
