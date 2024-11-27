@@ -1,0 +1,35 @@
+/* Container for the location and the text */
+.location-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;  /* Aligns icon and text vertically */
+    cursor: pointer;
+}
+
+/* Icon styling */
+.location-wrapper img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;  /* Adds space between the icon and text */
+}
+
+/* Initially hide the hover text */
+.hover-text {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;  /* Prevents the text from wrapping to the next line */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+}
+
+/* On hover, show the text */
+.location-wrapper:hover .hover-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+
