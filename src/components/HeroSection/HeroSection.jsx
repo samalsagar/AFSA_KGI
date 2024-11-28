@@ -11,63 +11,56 @@ function HeroSection() {
   const slides = [
     {
       id: 1,
-      image: main1,
-      alt: 'Wild Landscape',
+      image: main4,
+      alt: 'Exotic Fruits',
     },
     {
       id: 2,
-      // image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
-      image: main2,
-      alt: 'Camera',
+      image: main5,
+      alt: 'Exotic Fruits',
     },
+
     {
       id: 3,
-      // image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
       image: main3,
       alt: 'Exotic Fruits',
     },
     {
-        id: 4,
-        // image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
-        image: main4,
-        alt: 'Exotic Fruits',
-      },
-      {
-        id: 5,
-        // image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
-        image: main5,
-        alt: 'Exotic Fruits',
-      },
-      {
-        id: 6,
-        // image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
-        image: main1,
-        alt: 'Exotic Fruits',
-      },
-      {
-        id: 7,
-        //  image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
-        image: main2,
-        alt: 'Exotic Fruits',
-      },
-      {
-        id: 8,
-        //  image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
-        image: main3,
-        alt: 'Exotic Fruits',
-      },
-      {
-        id: 9,
-        //  image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
-        image: main4,
-        alt: 'Exotic Fruits',
-      },
-      {
-        id: 10,
-        //  image: 'https://images.pexels.com/photos/28193003/pexels-photo-28193003/free-photo-of-dusk-panoramic-aerial-view-of-monaco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2',
-        image: main5,
-        alt: 'Exotic Fruits',
-      },
+      id: 4,
+      image: main1,
+      alt: 'Wild Landscape',
+    },
+    {
+      id: 5,
+      image: main2,
+      alt: 'Camera',
+    },
+    {
+      id: 6,
+
+      image: main1,
+      alt: 'Exotic Fruits',
+    },
+    {
+      id: 7,
+      image: main2,
+      alt: 'Exotic Fruits',
+    },
+    {
+      id: 8,
+      image: main3,
+      alt: 'Exotic Fruits',
+    },
+    {
+      id: 9,
+      image: main4,
+      alt: 'Exotic Fruits',
+    },
+    {
+      id: 10,
+      image: main5,
+      alt: 'Exotic Fruits',
+    },
   ];
 
   // Function to handle slide change
@@ -129,11 +122,10 @@ function HeroSection() {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-4 h-4 rounded-full transition transform ${
-              currentIndex === index
+            className={`w-4 h-4 rounded-full transition transform ${currentIndex === index
                 ? 'bg-blue-500 scale-125'
                 : 'bg-white opacity-50 hover:opacity-75'
-            }`}
+              }`}
           ></button>
         ))}
       </div>
