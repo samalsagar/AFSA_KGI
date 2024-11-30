@@ -12,19 +12,9 @@ import OurWork from './components/OurWork/OurWork';
 import ContactUs from './components/ContactUs/ContactUs';
 import WhatsappIcon from './components/WhatsappIcon/WhatsappIcon';
 import Donate from './components/Donate/Donate';
-import Loader from './components/Loader/Loader'; 
-import { useState, useEffect } from 'react';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    // Set isLoading to false after the page is loaded
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000); // You can adjust this duration to control how long the loader stays
-
-    return () => clearTimeout(timer); // Clean up the timer if the component unmounts
-  }, []);
+  
   // Create refs for each secton
   const heroRef = useRef(null);
   const factsRef = useRef(null);
@@ -38,7 +28,6 @@ function App() {
 
   return (
     <>
-    {isLoading && <Loader />}
       <Header
         heroRef={heroRef}
         factsRef={factsRef}
