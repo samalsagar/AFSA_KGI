@@ -41,15 +41,13 @@ function OurTeam() {
       {/* Main Section */}
       <div className="bg-custom-blue lg:ps-36 ps-0">
         <h2 className="text-white text-3xl font-extrabold text-center">Meet Our Team</h2>
-
         <div className="container">
-          <section className="py-12 relative">
+          <section className="py-16 relative"> {/* Reduced vertical padding */}
             <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-              <div className="w-full justify-start items-center gap-20 grid lg:grid-cols-2 grid-cols-1">
+              <div className="w-full justify-center items-center gap-20 grid lg:grid-cols-2 grid-cols-1"> {/* Adjust grid alignment */}
                 <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
                   <div className="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
                     <div className="flex items-center space-x-4">
-                      {/* Ensure both name and designation are on the same line with flex */}
                       <h2 className="text-white text-xl sm:text-2xl md:text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
                         Mr. Ranjan Das
                       </h2>
@@ -65,6 +63,7 @@ function OurTeam() {
                     </p>
                   </div>
                 </div>
+
                 <img
                   className="lg:mx-0 mx-auto h-full rounded-3xl object-cover"
                   src={ranjanDas}
@@ -75,6 +74,8 @@ function OurTeam() {
           </section>
         </div>
       </div>
+
+
 
 
       {/* Team Cards Section */}

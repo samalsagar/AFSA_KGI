@@ -87,7 +87,7 @@ function Header({
               <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
                 <button
                   onClick={() => scrollToSection(heroRef)}
-                  className="text-custom-blue block font-semibold text-[15px] hover:font-extrabold"
+                  className="text-custom-blue block font-semibold text-[15px] hover:font-bold"  // Updated to font-bold
                 >
                   Home
                 </button>
@@ -95,7 +95,7 @@ function Header({
               <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
                 <button
                   onClick={() => scrollToSection(aboutUsRef)}
-                  className="text-gray-500 block font-semibold text-[15px] hover:font-extrabold hover:text-custom-blue"
+                  className="text-gray-500 block font-semibold text-[15px] hover:font-bold hover:text-custom-blue"  // Updated to font-bold
                 >
                   About Us
                 </button>
@@ -103,7 +103,7 @@ function Header({
               <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
                 <button
                   onClick={() => scrollToSection(ourTeamRef)}
-                  className="text-gray-500 block font-semibold text-[15px] hover:font-extrabold hover:text-custom-blue"
+                  className="text-gray-500 block font-semibold text-[15px] hover:font-bold hover:text-custom-blue"  // Updated to font-bold
                 >
                   Our Team
                 </button>
@@ -111,7 +111,7 @@ function Header({
               <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
                 <button
                   onClick={() => scrollToSection(ourWorkRef)}
-                  className="text-gray-500 block font-semibold text-[15px] hover:font-extrabold hover:text-custom-blue"
+                  className="text-gray-500 block font-semibold text-[15px] hover:font-bold hover:text-custom-blue"  // Updated to font-bold
                 >
                   Our Work
                 </button>
@@ -119,7 +119,7 @@ function Header({
               <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
                 <button
                   onClick={() => scrollToSection(galleryRef)}
-                  className="text-gray-500 block font-semibold text-[15px] hover:font-extrabold hover:text-custom-blue"
+                  className="text-gray-500 block font-semibold text-[15px] hover:font-bold hover:text-custom-blue"  // Updated to font-bold
                 >
                   Gallery
                 </button>
@@ -128,18 +128,19 @@ function Header({
               <li className="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
                 <button
                   onClick={() => scrollToSection(contactusRef)}
-                  className="text-gray-500 block font-semibold text-[15px] hover:font-extrabold hover:text-custom-blue"
+                  className="text-gray-500 block font-semibold text-[15px] hover:font-bold hover:text-custom-blue"  // Updated to font-bold
                 >
                   Contact Us
                 </button>
               </li>
             </ul>
+
           </div>
 
           <div className="flex max-lg:ml-auto space-x-3">
-            <button 
-             onClick={() => scrollToSection(donateRef)}
-            className="px-8 py-3 text-sm rounded-full font-bold text-white border-2 border-custom-blue bg-custom-blue transition-all ease-in-out duration-300 hover:bg-transparent hover:text-custom-blue">
+            <button
+              onClick={() => scrollToSection(donateRef)}
+              className="px-8 py-3 text-sm rounded-full font-bold text-white border-2 border-custom-blue bg-custom-blue transition-all ease-in-out duration-300 hover:bg-transparent hover:text-custom-blue">
               Donate
             </button>
           </div>
