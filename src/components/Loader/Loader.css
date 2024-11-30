@@ -1,0 +1,42 @@
+/* src/components/Loader/Loader.css */
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);  /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .pulse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulseAnimation 1.5s infinite ease-in-out;
+  }
+  
+  .logo {
+    width: 20%; /* Logo size */
+    height: 100vh;
+    object-fit: contain;
+    animation: pulseAnimation 1.5s infinite ease-in-out;
+    border-radius: 50px;
+  }
+  
+  /* Pulse animation */
+  @keyframes pulseAnimation {
+    0% {
+      transform: scale(1); /* Normal size */
+    }
+    50% {
+      transform: scale(1.1); /* Slightly bigger */
+    }
+    100% {
+      transform: scale(1); /* Back to normal */
+    }
+  }
+  
