@@ -42,15 +42,17 @@ function Footer({ heroRef, factsRef, aboutUsRef, visionRef, ourTeamRef, ourWorkR
                                 <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-custom-blue">Address</h2>
                             </div>
                             <ul className="leading-8">
-                                <li className="hover:text-blue-400">Natapada,Jajpur Road,Jajpur,Pin code - 755015,Odisha</li>
-
+                                <li className="hover:text-blue-400">Tarapur, Laxminagar, Jajpur Road, Jajpur-755015, Odisha</li>
+                            </ul>
+                            <ul className="leading-8">
+                                <li className="hover:text-blue-400">Plot no- 686/2882 , Shanti Nagar, Canal Road, Jharpada, Bhubaneswar, Odisha</li>
                             </ul>
                         </div>
                         <div className="px-4 my-4 w-full sm:w-auto xl:w-1/5">
                             <div>
                                 <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-custom-blue">Connect With Us</h2>
                             </div>
-                            <a href="#" className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-blue-400 hover:border-blue-400">
+                            <a href="https://www.facebook.com/profile.php?id=61568305233021" target='_blank' className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-blue-400 hover:border-blue-400">
                                 <svg className="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
                                 </svg>

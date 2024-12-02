@@ -18,7 +18,7 @@ function ContactUs() {
             Message: message
         }
 
-        axios.post('https://api.sheetbest.com/sheets/0b68276b-297b-4d08-9433-d093fdf04727', data).then((response) => {
+        axios.post('https://api.sheetbest.com/sheets/4e4eb03c-3320-468d-bd2a-1a2d1a1ae2b3', data).then((response) => {
             console.log(response);
             Swal.fire('We Appreciate Your Inquiry', "Will get back to you soon", 'success');
             setname('')
@@ -66,10 +66,10 @@ function ContactUs() {
                                             </svg>
                                         </div>
                                         <div className="ml-4 mb-4">
-                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Our Registred Office
+                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white text-left">Our Registred Office
                                             </h3>
-                                            <p className="text-gray-600 dark:text-slate-400">Natapada, Jajpur Road, Jajpur</p>
-                                            <p className="text-gray-600 dark:text-slate-400">Pin code - 755015, Odisha</p>
+                                            <p className="text-gray-600 dark:text-slate-400 text-left">Tarapur, Laxminagar, Jajpur Road, Jajpur</p>
+                                            <p className="text-gray-600 dark:text-slate-400 text-left">Pin code - 755015, Odisha</p>
                                         </div>
                                     </li>
                                     <li className="flex">
@@ -84,10 +84,10 @@ function ContactUs() {
                                             </svg>
                                         </div>
                                         <div className="ml-4 mb-4">
-                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Our Corporate Office
+                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white text-left">Our Corporate Office
                                             </h3>
-                                            <p className="text-gray-600 dark:text-slate-400">Natapada, Jajpur Road, Jajpur</p>
-                                            <p className="text-gray-600 dark:text-slate-400">Pin code - 755015, Odisha</p>
+                                            <p className="text-gray-600 dark:text-slate-400 text-left">Plot no- 686/2882, Shanti Nagar, Canal Road,</p>
+                                            <p className="text-gray-600 dark:text-slate-400 text-left">Jharpada, Bhubaneswar, Pin code - 755015, Odisha</p>
                                         </div>
                                     </li>
                                     <li className="flex">
@@ -103,10 +103,10 @@ function ContactUs() {
                                             </svg>
                                         </div>
                                         <div className="ml-4 mb-4">
-                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Contact
+                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white text-left">Contact
                                             </h3>
-                                            <p className="text-gray-600 dark:text-slate-400">Mobile: +91 9810105099</p>
-                                            <p className="text-gray-600 dark:text-slate-400">Mail: tailnext@gmail.com</p>
+                                            <p className="text-gray-600 dark:text-slate-400 text-left">Mobile: +91 9090969619</p>
+                                            <p className="text-gray-600 dark:text-slate-400 text-left">Mail: info@afsa.org.in</p>
                                         </div>
                                     </li>
                                     <li className="flex">
@@ -119,10 +119,9 @@ function ContactUs() {
                                             </svg>
                                         </div>
                                         <div className="ml-4 mb-4">
-                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Working
+                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white text-left">Working
                                                 hours</h3>
-                                            <p className="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
-                                            <p className="text-gray-600 dark:text-slate-400">Saturday &amp; Sunday: 08:00 - 12:00</p>
+                                            <p className="text-gray-600 dark:text-slate-400 text-left">Monday - Sataurday: 09:30 - 18:00</p>
                                         </div>
                                     </li>
                                 </ul>

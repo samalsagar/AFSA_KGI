@@ -14,24 +14,32 @@ function OurTeam() {
       name: "Er. Alexzandar Das",
       designation: "Founder, Director & CEO",
       image: alex,
+      linkedIn : "https://www.linkedin.com/in/alexzandar-das-286110289/",
+      twitter : "https://x.com/alexdasknp?t=5OPOY3vqpxyUzyw0Q58hqg&s=08",
       description: "Founder and visionary behind the organization. Alexzandar leads with a focus on innovation and growth."
     },
     {
       name: "Mr. Deepak Kumar Tripathy",
       designation: "Chief Operating Officer",
       image: deepak,
+      linkedIn : "",
+      twitter : "",
       description: "Deepak drives the operational efficiency of the organization with a strategic approach to business operations."
     },
     {
       name: "Mr. Gagan Joshi",
       designation: "Head (Learning and Development)",
       image: gagan,
+      linkedIn : "",
+      twitter : "",
       description: "Gagan is responsible for employee training, talent development, and fostering a culture of continuous learning."
     },
     {
       name: "Mr. Bijaya Prasad Nayak",
       designation: "Designation",
       image: bijay,
+      linkedIn : "",
+      twitter : "",
       description: "Bijaya is a key member of the leadership team, contributing to the organization’s strategic growth."
     }
   ];
@@ -75,14 +83,11 @@ function OurTeam() {
         </div>
       </div>
 
-
-
-
       {/* Team Cards Section */}
       <div className="font-[sans-serif] bg-custom-blue">
         <div className="lg:max-w-6xl max-w-xl mx-auto p-1">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 max-md:justify-center mt-12">
-            {/* Loop through the users array and pass props to each OurTeamCard */}
+            
             {users.map((user, index) => (
               <OurTeamCard
                 key={index}
@@ -90,6 +95,8 @@ function OurTeam() {
                 designation={user.designation}
                 image={user.image}
                 description={user.description}
+                linkedIn = {user.linkedIn}
+                twitter = {user.twitter}
               />
             ))}
           </div>

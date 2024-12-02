@@ -1,6 +1,6 @@
 import React from 'react';
 
-function OurTeamCard({ name, designation, image, description }) {
+function OurTeamCard({ name, designation, image, description, linkedIn, twitter }) {
   return (
     <>
       <div className="flex items-center max-sm:flex-col bg-gray-100 gap-4 rounded-lg overflow-hidden hover:scale-[1.02] transition-all">
@@ -15,6 +15,7 @@ function OurTeamCard({ name, designation, image, description }) {
           </div>
 
           <div className="space-x-2 mt-4">
+            <a href={linkedIn} target='_blank'>
             <button type="button"
               className="w-6 h-6 inline-flex items-center max-sm:flex-col justify-center rounded-full border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">
               <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#fff" viewBox="0 0 155.139 155.139">
@@ -23,6 +24,8 @@ function OurTeamCard({ name, designation, image, description }) {
                   data-original="#010002" />
               </svg>
             </button>
+            </a>
+            <a href={twitter} target='_blank'>
             <button type="button"
               className="w-6 h-6 inline-flex items-center max-sm:flex-col justify-center rounded-full border-none outline-none bg-[#03a9f4] hover:bg-[#03a1f4] active:bg-[#03a9f4]">
               <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#fff" viewBox="0 0 512 512">
@@ -31,6 +34,7 @@ function OurTeamCard({ name, designation, image, description }) {
                   data-original="#03a9f4" />
               </svg>
             </button>
+            </a>
           </div>
         </div>
       </div>

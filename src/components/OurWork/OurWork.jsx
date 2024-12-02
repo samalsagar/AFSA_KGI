@@ -17,7 +17,7 @@ function OurWork() {
                         src={loca}
                         alt="Location Icon"
                     />
-                    <div className="hover-text">Location 1</div>
+                    <div className="hover-text">Ranchi</div>
                 </div>
 
                 {/* Location 2 */}
@@ -26,7 +26,7 @@ function OurWork() {
                         src={loca}
                         alt="Location Icon"
                     />
-                    <div className="hover-text">Location 2</div>
+                    <div className="hover-text">Bhubaneswar</div>
                 </div>
 
                 {/* Location 3 */}
@@ -35,7 +35,7 @@ function OurWork() {
                         src={loca}
                         alt="Location Icon"
                     />
-                    <div className="hover-text">Location 3</div>
+                    <div className="hover-text">Raipur</div>
                 </div>
 
                 {/* Location 4 */}
@@ -44,7 +44,7 @@ function OurWork() {
                         src={loca}
                         alt="Location Icon"
                     />
-                    <div className="hover-text">Location 4</div>
+                    <div className="hover-text">New Delhi</div>
                 </div>
 
                 {/* Location 5 */}
@@ -53,7 +53,7 @@ function OurWork() {
                         src={loca}
                         alt="Location Icon"
                     />
-                    <div className="hover-text">Location 5</div>
+                    <div className="hover-text">Jajpur Road</div>
                 </div>
             </div>
 
@@ -485,25 +485,9 @@ function OurWork() {
                             <p className="text-sm font-bold text-center text-custom-blue">Kalinga Group of Institutions (KGI)</p>
                         </div>
 
-
-                        {/* <div className="bg-gray-400 p-6 rounded-lg shadow-lg flex flex-col items-center w-48 mb-6 sm:mb-0 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:rotate-3deg animate-fade-in">
-                            <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Client 2 Logo" className="h-16 w-16 mb-2 rounded-full" />
-                            <p className="text-sm font-bold text-center text-custom-blue">Siksha Trust in partnership with MSME Dept Govt of India.</p>
-                        </div>
-
-
-                        <div className="bg-gray-400 p-6 rounded-lg shadow-lg flex flex-col items-center w-48 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:rotate-3deg animate-fade-in">
-                            <img src="https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Client 3 Logo" className="h-16 w-16 mb-2 rounded-full" />
-                            <p className="text-sm font-bold text-center text-custom-blue">Dibyang Adarsha <br />Trust</p>
-                        </div> */}
-
                     </div>
                 </div>
             </div>
-
-
-
-
         </div>
     );
 }
