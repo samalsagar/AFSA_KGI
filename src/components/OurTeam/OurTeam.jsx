@@ -17,7 +17,7 @@ function OurTeam() {
       linkedIn : "https://www.linkedin.com/in/alexzandar-das-286110289/",
       twitter : "https://x.com/alexdasknp?t=5OPOY3vqpxyUzyw0Q58hqg&s=08",
       description: "Founder and visionary behind the organization. Alexzandar leads with a focus on innovation and growth.",
-      moreDescription : "kjdhdshjksdfhjksdfhjkdf"
+      moreDescription : "Er. Alexzandar Das, born on January 2, 1985, is a visionary leader who prioritized community service over corporate success, despite his academic achievements in engineering and technology. Holding an MTech in Electronics and Telecommunications Engineering, a PGDM in Human Resources from XIMB, an MA in Mass Communication and Journalism, and an LLM from Utkal University, he is currently pursuing a Ph.D. at Utkal University. In 2022, he launched the Aryalex Foundation for Social Activities (AFSA) to tackle issues like environmental conservation, healthcare, women’s empowerment, and education. Alexzandar also empowered over 1,500 artisans by establishing the Soro Stone Cluster and Haripur Mytho Dress Cluster and founded Kalinga FabLab, Odisha’s first rural innovation lab, to inspire rural entrepreneurship. His work reflects an unwavering commitment to social welfare and environmental sustainability. Also, being an Editor, diverse fields, including education, extensive knowledge and multidisciplinary expertise have allowed him to approach issues from a unique perspective, making his contributions not only informative but also transformative. Through his editorial leadership, he has enriched public discourse and inspired many to engage with the pressing issues of our time."
     },
     {
       name: "Mr. Deepak Kumar Tripathy",
@@ -26,7 +26,7 @@ function OurTeam() {
       linkedIn : "",
       twitter : "",
       description: "Deepak drives the operational efficiency of the organization with a strategic approach to business operations.",
-       moreDescription : "kjdhdshjksdfhjksdfhjkdf"
+       moreDescription : "Mr. Deepak Kumar Tripathy is the Chief Operation Officer (COO) and mentor of AFSA. He has 30 years of experience in development sector and has associated with AFSA since last 6 months. He has successfully performed his job responsibilities with different agencies in different capacities. He has served at various National level NGOs, International donors, bilateral agencies, Govt Department and Corporates. He has well managed programs in collaboration with Plan International, DFID, USAID, OFDA, UNICEF, Clinton Foundation CII and Tata Steel. He has also worked with JICA, CRS, CARE, Lepra, J.K Paper, Habitat for Humanity India and Aarvee associates Pvt Ltd. He has quality overseas work experiences in Indonesia, Bangladesh and Nepal. His core competency area is “Poverty Analysis and Planning for hard core poor and minorities”. He well versed with social research, motivational training, mentoring, Participatory planning monitoring and evaluation. Core skill area arePartnership and resource mobilization."
     },
     {
       name: "Mr. Gagan Joshi",
@@ -44,7 +44,7 @@ function OurTeam() {
       linkedIn : "",
       twitter : "",
       description: "Bijaya is a key member of the leadership team, contributing to the organization’s strategic growth.",
-       moreDescription : "A dedicated and rekjdhkfshksdhfjds"
+       moreDescription : "...."
     }
   ];
 
