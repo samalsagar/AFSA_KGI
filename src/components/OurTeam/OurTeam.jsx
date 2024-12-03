@@ -16,7 +16,8 @@ function OurTeam() {
       image: alex,
       linkedIn : "https://www.linkedin.com/in/alexzandar-das-286110289/",
       twitter : "https://x.com/alexdasknp?t=5OPOY3vqpxyUzyw0Q58hqg&s=08",
-      description: "Founder and visionary behind the organization. Alexzandar leads with a focus on innovation and growth."
+      description: "Founder and visionary behind the organization. Alexzandar leads with a focus on innovation and growth.",
+      moreDescription : "kjdhdshjksdfhjksdfhjkdf"
     },
     {
       name: "Mr. Deepak Kumar Tripathy",
@@ -24,7 +25,8 @@ function OurTeam() {
       image: deepak,
       linkedIn : "",
       twitter : "",
-      description: "Deepak drives the operational efficiency of the organization with a strategic approach to business operations."
+      description: "Deepak drives the operational efficiency of the organization with a strategic approach to business operations.",
+       moreDescription : "kjdhdshjksdfhjksdfhjkdf"
     },
     {
       name: "Mr. Gagan Joshi",
@@ -32,7 +34,8 @@ function OurTeam() {
       image: gagan,
       linkedIn : "",
       twitter : "",
-      description: "Gagan is responsible for employee training, talent development, and fostering a culture of continuous learning."
+      description: "Gagan is responsible for employee training, talent development, and fostering a culture of continuous learning.",
+       moreDescription : "A dedicated and results-driven learning and development leader with two decades of experience designing and implementing innovative training programs to enhance organizational capacity and individual growth within the social sector. Adept at aligning learning initiatives with strategic goals to improve service delivery and community impact. Is a certified WPPF(Whole Person Process Facilitator) from Dalar International Raleigh, United States. Has facilitated and delivered more than 250 training sessions across INDIA in domains like Personality Development, Life Skills, Retail, BFSI, and Future Skills."
     },
     {
       name: "Mr. Bijaya Prasad Nayak",
@@ -40,7 +43,8 @@ function OurTeam() {
       image: bijay,
       linkedIn : "",
       twitter : "",
-      description: "Bijaya is a key member of the leadership team, contributing to the organization’s strategic growth."
+      description: "Bijaya is a key member of the leadership team, contributing to the organization’s strategic growth.",
+       moreDescription : "A dedicated and rekjdhkfshksdhfjds"
     }
   ];
 
@@ -97,6 +101,7 @@ function OurTeam() {
                 description={user.description}
                 linkedIn = {user.linkedIn}
                 twitter = {user.twitter}
+                more = {user.moreDescription}
               />
             ))}
           </div>
